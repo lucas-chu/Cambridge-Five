@@ -107,5 +107,5 @@ for name in [
     for resultPage in response:
         for item in resultPage["Blocks"]:
             if item["BlockType"] == "LINE":
-                f.write (item["Text"])
+                f.write (item["Text"] + " ")
     f.close()
